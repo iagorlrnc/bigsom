@@ -1,0 +1,305 @@
+<!doctype html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Big Som - Especialistas em som automotivo, acessórios e insulfilm. Projetos personalizados com qualidade e potência."
+    />
+    <title>Big Som | Som Automotivo e Acessórios</title>
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;800&family=Rajdhani:wght@500;600;700&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- FontAwesome for Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+    />
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+
+  <body>
+    <header class="navbar" id="navbar">
+      <div class="container nav-content">
+        <a href="#" class="logo">BIG <span class="text-neon">SOM</span></a>
+        <nav class="nav-links" id="nav-links">
+          <a href="#home">Início</a>
+          <a href="#sobre">Sobre Nós</a>
+          <a href="#servicos">Serviços</a>
+          <a href="#galeria">Galeria</a>
+          <a href="#contato">Contato</a>
+        </nav>
+        <div class="mobile-menu-btn" id="mobile-menu-btn">
+          <i class="fas fa-bars"></i>
+        </div>
+      </div>
+    </header>
+
+    <main>
+      <!-- Hero Section -->
+      <section class="hero" id="home">
+        <canvas id="hero-canvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="container hero-content">
+          <div class="hero-text-wrapper">
+            <h1 class="hero-title slide-up">
+              BIG <span class="text-neon">SOM</span>
+            </h1>
+          </div>
+          <div class="hero-bottom-wrapper">
+            <p class="hero-slogan slide-up delay-1">
+              Para os apaixonados por Som Automotivo.
+            </p>
+            <div class="hero-buttons slide-up delay-2">
+              <a href="#produtos" class="btn btn-primary">Ver Produtos</a>
+              <a href="#contato" class="btn btn-outline">Solicitar Orçamento</a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Sobre a Empresa -->
+      <section class="about" id="sobre">
+        <div class="container about-grid">
+          <div class="about-text fade-in">
+            <h2 class="section-title">
+              Nossa <span class="text-neon">História</span>
+            </h2>
+            <p>
+              A Big Som é referência em som automotivo e acessórios. Com anos de
+              experiência no mercado, transformamos a paixão por carros em
+              projetos de alta performance, estética e qualidade sonora
+              superior.
+            </p>
+            <p>
+              Trabalhamos com as melhores marcas globais, garantindo
+              durabilidade, potência e um acabamento impecável em cada veículo.
+            </p>
+            <ul class="about-features">
+              <li>
+                <i class="fas fa-check text-neon"></i> Profissionais Altamente
+                Qualificados
+              </li>
+              <li>
+                <i class="fas fa-check text-neon"></i> Equipamentos de Última
+                Geração
+              </li>
+              <li>
+                <i class="fas fa-check text-neon"></i> Garantia em Todos os
+                Serviços
+              </li>
+            </ul>
+          </div>
+          <div class="about-img_container fade-in delay-1">
+            <div class="glow-box"></div>
+            <img
+              src="assets/about-img.jpg"
+              alt="Equipe Big Som"
+              class="about-img"
+              id="about-img-placeholder"
+            />
+          </div>
+        </div>
+      </section>
+
+      <!-- Serviços -->
+      <section class="services" id="servicos">
+        <div class="container text-center">
+          <h2 class="section-title">
+            Nossos <span class="text-neon">Serviços</span>
+          </h2>
+          <div class="services-grid">
+            <div class="service-card scale-in">
+              <div class="service-icon"><i class="fas fa-volume-up"></i></div>
+              <h3>Instalação de Som</h3>
+              <p>
+                Projetos de som personalizados, desde o básico até competições
+                de alta fidelidade e pressão sonora.
+              </p>
+            </div>
+            <div class="service-card scale-in delay-1">
+              <div class="service-icon"><i class="fas fa-box-open"></i></div>
+              <h3>Acessórios & Módulos</h3>
+              <p>
+                Venda e instalação de alto-falantes, subwoofers, módulos
+                amplificadores e centrais multimídia.
+              </p>
+            </div>
+            <div class="service-card scale-in delay-2">
+              <div class="service-icon"><i class="fas fa-tint"></i></div>
+              <h3>Insulfilm</h3>
+              <p>
+                Aplicação de películas de controle solar de alta performance
+                para proteção UV e privacidade.
+              </p>
+            </div>
+            <div class="service-card scale-in delay-3">
+              <div class="service-icon"><i class="fas fa-car-side"></i></div>
+              <h3>Personalização</h3>
+              <p>
+                Estética automotiva, iluminação em LED e acessórios que destacam
+                o design do seu veículo.
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Galeria -->
+      <section class="gallery" id="galeria">
+        <div class="container text-center">
+          <h2 class="section-title">
+            Projetos <span class="text-neon">Realizados</span>
+          </h2>
+          <div class="gallery-grid" id="gallery-container">
+            <!-- Images dynamically added by JS -->
+          </div>
+        </div>
+      </section>
+
+      <!-- Contato -->
+      <section class="contact" id="contato">
+        <div class="container">
+          <div class="contact-grid">
+            <div class="contact-info slide-right">
+              <h2 class="section-title">
+                Fale <span class="text-neon">Conosco</span>
+              </h2>
+              <p>
+                Entre em contato para solicitar seu orçamento ou tirar dúvidas
+                sobre nossos serviços.
+              </p>
+              <div class="contact-methods">
+                <div class="method">
+                  <i class="fab fa-whatsapp text-neon"></i>
+                  <div>
+                    <h4>WhatsApp</h4>
+                    <p>(63) 99999-9999</p>
+                  </div>
+                </div>
+                <div class="method">
+                  <i class="fas fa-envelope text-neon"></i>
+                  <div>
+                    <h4>E-mail</h4>
+                    <p>contato@bigsom.com.br</p>
+                  </div>
+                </div>
+                <div class="method">
+                  <i class="fas fa-map-marker-alt text-neon"></i>
+                  <div>
+                    <h4>Endereço</h4>
+                    <p>
+                      Q. 104 Norte Rua NE 7, 03 - Plano Diretor Norte<br />Palmas
+                      - TO, 77006-026
+                    </p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <form class="contact-form slide-left" id="contact-form">
+              <div class="form-group">
+                <input type="text" id="name" placeholder="Seu Nome" required />
+              </div>
+              <div class="form-group">
+                <input
+                  type="tel"
+                  id="phone"
+                  placeholder="Seu Telefone / WhatsApp"
+                  required
+                />
+              </div>
+              <div class="form-group">
+                <textarea
+                  id="message"
+                  rows="5"
+                  placeholder="Sua Mensagem"
+                  required
+                ></textarea>
+              </div>
+              <button type="submit" class="btn btn-primary btn-block">
+                Enviar Mensagem
+              </button>
+            </form>
+          </div>
+        </div>
+      </section>
+
+      <!-- Horário de Funcionamento & Mapa -->
+      <section class="business-hours" id="horarios">
+        <div class="container text-center">
+          <h2 class="section-title">
+            Onde Estamos & <span class="text-neon">Horários</span>
+          </h2>
+
+          <div class="location-grid">
+            <div class="hours-card scale-in">
+              <i class="fas fa-clock time-icon text-neon"></i>
+              <div class="hours-list">
+                <div class="hour-item">
+                  <span class="day">Segunda a Sexta</span>
+                  <span class="time">08:00 - 18:00</span>
+                </div>
+                <div class="hour-item">
+                  <span class="day">Sábado</span>
+                  <span class="time">08:00 - 12:00</span>
+                </div>
+                <div class="hour-item closed">
+                  <span class="day">Domingo e Feriados</span>
+                  <span class="time text-red">Fechado</span>
+                </div>
+              </div>
+            </div>
+
+            <div class="map-container scale-in delay-1">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1963.5071369618965!2d-48.330892999458875!3d-10.179494756012364!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x9324cb6896430bed%3A0x9b9d01d9b541a3d1!2sBig%20Som%20Auto%20Center!5e0!3m2!1spt-BR!2sbr!4v1771609370666!5m2!1spt-BR!2sbr"
+                width="100%"
+                height="100%"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <footer>
+      <div class="container footer-content text-center">
+        <a href="#" class="footer-logo"
+          >BIG <span class="text-neon">SOM</span></a
+        >
+        <p>&copy; 2026 Big Som. Todos os direitos reservados.</p>
+        <div class="social-links">
+          <a href="#"><i class="fab fa-instagram"></i></a>
+          <a href="#"><i class="fab fa-facebook-f"></i></a>
+          <a href="#"><i class="fab fa-youtube"></i></a>
+        </div>
+      </div>
+    </footer>
+
+    <!-- Botão flutuante WhatsApp -->
+    <a
+      href="https://wa.me/5563999999999"
+      class="whatsapp-float"
+      target="_blank"
+      rel="noopener noreferrer"
+    >
+      <i class="fab fa-whatsapp"></i>
+    </a>
+
+    <!-- Custom JS -->
+    <script src="js/main.js"></script>
+  </body>
+</html>
